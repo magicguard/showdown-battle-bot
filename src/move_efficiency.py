@@ -85,7 +85,7 @@ def ability_modificator(move, pkm1, pkm2):
     :return: Integer [0; +oo[
     """
     mod = 1
-    if "Tinded Lens" in pkm1.abilities and efficiency(move["type"], pkm2.types) < 1:
+    if "Tinted Lens" in pkm1.abilities and efficiency(move["type"], pkm2.types) < 1:
         mod *= 2
     elif "Guts" in pkm1.abilities and pkm1.status != Status.UNK and move["category"] == "Physical":
         mod *= 1.5
